@@ -1,0 +1,26 @@
+{
+  "name": "autofill-campus-application",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome 与 Edge 秋招网申自动填写插件",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "test": "node scripts/smoke.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "lucide-react": "^0.468.0",
+    "pdfjs-dist": "^6.4.299",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.7.2"
+  }
+}

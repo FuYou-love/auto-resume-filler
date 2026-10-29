@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "OfferPilot 网申助手",
+  "version": "0.1.0",
+  "description": "在本地安全保存求职资料，并智能填写秋招网申表单。",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_title": "OfferPilot 网申助手",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["pdf-worker.js", "cmaps/*", "standard_fonts/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
